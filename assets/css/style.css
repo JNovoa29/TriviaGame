@@ -1,0 +1,33 @@
+/* nav */
+.navbar {
+    padding: 50px;
+    margin-bottom: 15px;
+}
+
+.navbar-brand {
+    margin-left: 558px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    font-size: 40px;
+    color: black;
+}
+
+/* background color */
+
+.container {
+background: white;
+}
+
+/* center column contents */
+.center {
+    text-align: center;
+}
+
+/* ps logo image */
+
+#pslogo {
+    height: 200px;
+    width: 300px;   
+    margin-bottom: 15px;
+}
