@@ -1,28 +1,46 @@
-$(document).on("click", function() {
+//button variable
+var startGameBTN
+$("#start").append(startGameBTN)
 
-    var timeLeft = setTimeout(time, 1000)
-    var val = 30
-
-    function time(val){
-        $("#time").html("<h2>" + val + "</h2>")
-        console.log(val)
-        val--
-    }
-    //start game button set to begin countdown
-    $(".start").on("click", function () {
-        //countdown timer
-        //show time left in html
-        // $("#time").html("Time Remaining: " + timeLeft)
-        console.log(timeLeft)
-    })
-
-
-
-
-
-
-    // question & answers
-    // one answer must be true while the remaining are false
-
+//timer functionality tied to button click
+$(document).on("click", function () {
+    var timeLeft = 30
+    var countdownTime = setInterval(function () {
+        timeLeft--;
+        $("#countdownTime").html("Time Remaining: " + timeLeft)
+        if (timeLeft <= 0)
+            clearInterval(countdownTime)
+        // console.log("hi")
+    }, 1000)
 
 })
+
+//trivia question answers
+
+var trivia = [
+    {
+        question1: "In what year did the original Sony Playstation release in North America?",
+        answers: [1991, 2000, 1993, 1995],
+        correctAnswer: 1995
+
+    },
+
+    {
+        question2: "Which goofy animal character is best known for only wearing pants?",
+        answers: ["PaRappa the Rapper", "Crash Bandicoot", "Spyro the Dragon", "Cloud"],
+        correctAnswer: "Crash Bandicoot"
+    }
+    $("#trivia").text(question1)
+    $("#trivia").text(answers)
+]
+
+
+
+
+
+
+
+
+
+
+

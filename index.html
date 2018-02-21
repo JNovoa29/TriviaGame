@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel = "stylesheet" type= "text/css" href = "assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
@@ -16,38 +16,43 @@
         <span class="navbar-brand mb-0 h1">PlayStation Trivia</span>
     </nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 left"></div>
-        <div class="col-lg-6 center">
-            <img id = "pslogo" src="./assets/images/pslogo.png" alt="playstation startup screen">
-            <button class = "btn btn-danger" id="start">Start</button>
-            <p id="time"></p>
-            <br><br><br>
-            <p id="question-1">Question 1: </p>
-            <br>
-            <p id="question-2">Question 2: </p>
-            <br>
-            <p id="question-3">Question 3: </p>
-            <br>
-            <p id="question-4">Question 4: </p>
-            <br>
-            <p id="question-5">Question 5: </p>
-            <br>
-            <p id="question-6">Question 6: </p>
-            <br>
-            <p id="question-7">Question 7: </p>
-            <br>
-            <p id="question-8">Question 8: </p>
-            <br>
-            <p id="question-9">Question 9: </p>
-            <br>
-            <p id="question-10">Question 10: </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 left"></div>
+            <div class="col-lg-6 center">
+                <img id="pslogo" src="./assets/images/pslogo.png" alt="playstation startup screen">
+                <button class="btn btn-danger" id="start">Start</button>
+                <p id="time"></p>
+                <p>
+                    <span id="countdownTime">Time Remaining: 30</span>
+                </p>
+                <br>
+                <br>
+                <br>
+                <p id="trivia"></p>
+                <!-- <form>
+                    <div>
+                        <input type="radio" name="ans" value="1">
+                        <span id="option-1">[option one]</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="ans" value="2">
+                        <span id="option-2">[option two]</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="ans" value="3">
+                        <span id="option-3">[option three]</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="ans" value="4">
+                        <span id="option-4">[option four]</span>
+                    </div>
+                </form> -->
+            </div>
+            <div class="col-lg-3 right"></div>
+
         </div>
-        <div class="col-lg-3 right"></div>
-
     </div>
-</div>
 
 
 
@@ -58,11 +63,8 @@
 
 
 
-    <script
-  src="http://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  <script src = "./assets/javascript/app.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
