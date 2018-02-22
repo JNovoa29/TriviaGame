@@ -15,24 +15,39 @@ $(document).on("click", function () {
 
 })
 
-//trivia question answers
+//trivia questions answers
 
-var trivia = [
-    {
-        question1: "In what year did the original Sony Playstation release in North America?",
-        answers: [1991, 2000, 1993, 1995],
-        correctAnswer: 1995
+var question1
+var answers1 = [1991, 2000, 1993, 1995]
+var corrAns1 = 1995
 
-    },
+$(function() {
+    $("#ansrs1").html(answers1)
+        
+})
 
-    {
-        question2: "Which goofy animal character is best known for only wearing pants?",
-        answers: ["PaRappa the Rapper", "Crash Bandicoot", "Spyro the Dragon", "Cloud"],
-        correctAnswer: "Crash Bandicoot"
-    }
-    $("#trivia").text(question1)
-    $("#trivia").text(answers)
-]
+
+
+// $("#ans").click(function() {    
+    //trivia questions and answers array
+    // var trivia = [
+    //     {
+    //         question1: "In what year did the original Sony Playstation release in North America?",
+    //         answers: [1991, 2000, 1993, 1995],
+    //         correctAnswer: 1995
+    
+    //     },
+    
+    //     {
+    //         question2: "Which goofy animal character is best known for only wearing pants?",
+    //         answers: ["PaRappa the Rapper", "Crash Bandicoot", "Spyro the Dragon", "Cloud"],
+    //         correctAnswer: "Crash Bandicoot"
+    //     }
+    
+    // ]
+//   });
+
+
 
 
 
