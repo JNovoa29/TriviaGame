@@ -108,6 +108,10 @@ var holder = []
         console.log(questionAnswers)
     })
 
+    //cycle through new question after answer select or timer runs out
+    //calculate right and wrong answers
+    
+
 
 })
 
