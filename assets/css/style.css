@@ -1,33 +1,60 @@
 /* nav */
-.navbar {
-    padding: 50px;
-    margin-bottom: 15px;
+.jumbotron {
+background: black;
+text-align: center;
+font-family: 'VT323', monospace;
 }
 
-.navbar-brand {
-    margin-left: 558px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: absolute;
-    font-size: 40px;
-    color: black;
+#main-head {
+    font-size: 3.5rem;
+    color: white;
+}
+
+#second-head {
+    font-size: 3.5rem;
+    color: red;
+}
+
+.fa-gamepad {
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
 }
 
 /* background color */
 
+body {
+    background-image: url(../images/wallpaper.jpg);
+    background-size: 100%;
+}
+
+
 .container {
-background: white;
+
 }
 
 /* center column contents */
 .center {
-    text-align: center;
+    text-align: left;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
 }
 
 /* ps logo image */
 
-#pslogo {
+/* #pslogo {
     height: 200px;
     width: 300px;   
     margin-bottom: 15px;
+    
+} */
+
+/* start button */
+
+.btn-danger {
+height: 60px;
+width: 80px;
+font-size: 22px;
 }

@@ -8,119 +8,41 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">PlayStation Trivia</span>
-    </nav>
+    <div class="jumbotron">
+        <h1 id="main-head">
+            <i class="fas fa-gamepad"></i>Playstation
+            <span id="second-head">Trivia</span>
+        </h1>
+    </div>
 
     <div class="container">
         <div class="row">
             <div class="col-lg-3 left"></div>
             <div class="col-lg-6 center">
-                <img id="pslogo" src="./assets/images/pslogo.png" alt="playstation startup screen">
+                <!-- <img id="pslogo" src="./assets/images/pslogo.png" alt="playstation startup screen"> -->
                 <button class="btn btn-danger" id="start">Start</button>
                 <p id="time"></p>
                 <p>
                     <span id="countdownTime">Time Remaining: 30</span>
                 </p>
                 <br>
-                <br>
-                <br>
 
-                <p id="trivia">
-                    <form>
-                        <ol id="listall">
-                            <li id="ques1">In what year did the original Sony Playstation release in North America?</li>
-                            <div>
-                                <input type="radio" name="ans1" value="1">
-                                <!-- <span id="ansArr1"></span> -->
-                                <ol id="ansrs1"></ol>
-                            </div>
 
-                            <li id="ques2"></li>
-                            <div>
-                                <input type="radio" name="ans" value="2">
-                                <!-- <span id="ansArr2"></span> -->
-                                <ol id="ans2"></ol>
-                            </div>
+                <div class="trivia">
+                    <div class="quest"></div>
+                    <div class="ansChoices"></div>
+                </div>
 
-                            <!-- <li id="ques3"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques4"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques5"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques6"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques7"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques8"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques9"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div>
-                            <li id="ques10"></li>
-                            <div>
-                                <input type="radio" name="ans" value="1">
-                                <span id="ansArr2"></span>
-                                <ol id="ans2"></ol>
-                            </div> -->
-                        </ol>
-                    </form>
-                </p>
-                <!-- <form>
-                    <div>
-                        <input type="radio" name="ans" value="1">
-                        <span id="option-1">[option one]</span>
-                    </div>
-                    <div>
-                        <input type="radio" name="ans" value="2">
-                        <span id="option-2">[option two]</span>
-                    </div>
-                    <div>
-                        <input type="radio" name="ans" value="3">
-                        <span id="option-3">[option three]</span>
-                    </div>
-                    <div>
-                        <input type="radio" name="ans" value="4">
-                        <span id="option-4">[option four]</span>
-                    </div>
-                </form> -->
+                <div class="col-lg-3 right"></div>
+
             </div>
-            <div class="col-lg-3 right"></div>
-
         </div>
-    </div>
 
 
 
@@ -131,8 +53,8 @@
 
 
 
-    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/app.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
